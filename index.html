@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weight converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="converter" id="">
+        <h1>WEIGHT CONVERTER</h1>
+
+        <input
+          list="browsers"
+          type="text"
+          id="weight-input"
+          placeholder="Enter pounds"
+        />
+
+        <div class="card">
+          <h4>Grams:</h4>
+          <p id="gramsOutput"></p>
+        </div>
+
+        <div class="card">
+          <h4>KiloGrams:</h4>
+          <p id="kgOutput"></p>
+        </div>
+
+        <div class="card">
+          <h4>Ounce:</h4>
+          <p id="ounceOutput"></p>
+        </div>
+        <button type="reset" id="btn">reset</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+:root {
+  --bg-hover: #bbbbbe;
+  --bg-color3: #cac7c7;
+  --nm-box-shadow: 5px 7px 12px #5a5a5a, -7px -7px 12px #ffffff;
+  --nm-inset: inset 7px 7px 12px #5a5a5a, inset -7px -7px 12px #ffffff;
+
+}
+
+body {
+  background: var(--bg-color3);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 10px auto;
+  padding: 15px;
+  background: var(--bg-color3);
+  box-shadow: var(--nm-box-shadow);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  background: var(--bg-color3);
+  box-shadow: var(--nm-box-shadow);
+  border-radius: 20px;
+}
+
+input,
+input:focus,
+input:hover {
+  border-radius: 1px;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  box-shadow: var(--nm-inset);
+}
+
+.card {
+  background: red;
+  width: 100%;
+  color: rgb(17, 17, 17);
+  border-radius: 10px;
+  margin: 10px 0;
+  display: block;
+  background: var(--bg-color3);
+  box-shadow: var(--nm-box-shadow);
+}
+
+.card h4,
+.card p {
+  padding: 0 20px;
+}
+
+::placeholder {
+  padding: 0 10px;
+  font-weight: bold;
+  color: red;
+}
+
+button {
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 30px 0;
+  background: var(--bg-color3);
+  box-shadow: var(--nm-box-shadow);
+  outline: none;
+  border: none;
+}
+button:hover {
+  background: var(--bg-hover);
+  font-weight: bold;
+}
